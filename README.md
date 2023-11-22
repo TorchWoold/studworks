@@ -5,44 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Студенческие работы на заказ</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-
-        header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1em 0;
-        }
-
-        section {
-            max-width: 800px;
-            margin: 2em auto;
-            padding: 0 20px;
-        }
-
-        h1, h2 {
-            color: #333;
-        }
-
-        p {
-            line-height: 1.6;
-            color: #666;
-        }
-
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1em 0;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-        }
+        /* ... (предыдущие стили) ... */
     </style>
 </head>
 <body>
@@ -71,6 +34,40 @@
             2. Выберите автора, который подходит вам по критериям.<br>
             3. Получите готовую работу в указанный срок.
         </p>
+    </section>
+
+    <section>
+        <h2>Заказать студенческую работу</h2>
+        <p>Заполните форму ниже, чтобы разместить заказ:</p>
+        <form action="/submit_order" method="post">
+            <label for="name">Ваше имя:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Ваш Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="assignment">Тип работы:</label>
+            <select id="assignment" name="assignment" required>
+                <option value="essay">Эссе</option>
+                <option value="coursework">Курсовая работа</option>
+                <option value="thesis">Дипломная работа</option>
+                <!-- Добавьте другие варианты по необходимости -->
+            </select>
+
+            <label for="instructions">Инструкции:</label>
+            <textarea id="instructions" name="instructions" rows="4" required></textarea>
+
+            <button type="submit">Отправить заказ</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Контакты</h2>
+        <p>Если у вас есть вопросы, свяжитесь с нами:</p>
+        <address>
+            Email: info@example.com<br>
+            Телефон: +7 (XXX) XXX-XX-XX
+        </address>
     </section>
 
     <footer>
